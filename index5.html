@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body class="default">
+
+    <main class="weather-card">
+        <h1>Weather App</h1>
+        <p class="subtitle">Search for the current weather of a city.</p>
+
+        <form id="weatherForm">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+                aria-label="City name"
+                required
+            >
+            <button type="submit">Get Weather</button>
+        </form>
+
+        <p id="status" class="status"></p>
+
+        <section id="weatherResult" class="weather-result" hidden>
+            <h2 id="cityName"></h2>
+            <p id="weatherDescription"></p>
+
+            <div class="weather-grid">
+                <div>
+                    <span>Temperature</span>
+                    <strong id="temperature">--</strong>
+                </div>
+                <div>
+                    <span>Feels Like</span>
+                    <strong id="feelsLike">--</strong>
+                </div>
+                <div>
+                    <span>Humidity</span>
+                    <strong id="humidity">--</strong>
+                </div>
+                <div>
+                    <span>Wind Speed</span>
+                    <strong id="windSpeed">--</strong>
+                </div>
+            </div>
+        </section>
+
+        <p class="note">
+            Weather data is provided by Open-Meteo. No API key is required.
+        </p>
+    </main>
+
+    <script src="script5.js"></script>
+</body>
+</html>
